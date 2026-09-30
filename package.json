@@ -1,0 +1,26 @@
+{
+  "name": "projeto-site-ong",
+  "version": "1.0.0",
+  "description": "Site institucional da ONG Resgate Animal, dedicada ao resgate, reabilitação e adoção responsável de cães e gatos em Belo Horizonte.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BaCNavarro/projeto-site-ong.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BaCNavarro/projeto-site-ong/issues"
+  },
+  "homepage": "https://github.com/BaCNavarro/projeto-site-ong#readme",
+  "devDependencies": {
+    "html-minifier-terser": "^7.2.0",
+    "vite": "^6.4.3"
+  },
+  "private": true
+}
