@@ -2235,6 +2235,37 @@ address {
   }
 }
 
+/* ---------- Alto contraste solicitado pelo usuário ---------- */
+@media (prefers-contrast: more) {
+  :root {
+    --text-muted: var(--text);
+    --border:     var(--color-neutral-500);
+  }
+
+  a:not(.btn) {
+    text-decoration: underline;
+  }
+}
+
+@media (prefers-contrast: more) and (prefers-color-scheme: dark) {
+  :root {
+    --border: #7d8a87;
+  }
+}
+
+/* ---------- Cores forçadas (ex.: Alto Contraste do Windows) ---------- */
+@media (forced-colors: active) {
+  :focus-visible,
+  .nav-toggle:focus-visible + .nav-toggle__label,
+  .choice__input:focus-visible + .choice__label {
+    outline: 3px solid Highlight;
+  }
+
+  .btn {
+    border: 1px solid ButtonText;
+  }
+}
+
 /* ---------- Impressão ---------- */
 @media print {
   .site-header,
