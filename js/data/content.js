@@ -40,13 +40,13 @@ export const VALUES = [
 
 export const HERO_IMAGES = [
   {
-    src: 'img/home/imagem1.jpg',
+    src: new URL('../../img/home/imagem1.jpg', import.meta.url).href,
     alt: 'Dois cães e um gato interagindo amigavelmente deitados em almofadas',
     width: 500,
     height: 333,
   },
   {
-    src: 'img/home/imagem2.jpg',
+    src: new URL('../../img/home/imagem2.jpg', import.meta.url).href,
     alt: 'Dois cães e um gato brincando na porta de casa',
     width: 500,
     height: 375,
@@ -70,9 +70,9 @@ export const PROJECTS = [
     description:
       'Eventos quinzenais realizados em praças parceiras na região de Belo Horizonte, onde cães e gatos reabilitados são apresentados a possíveis adotantes após uma rigorosa entrevista.',
     gallery: [
-      { src: 'img/projetos/adocao1.jpg', alt: 'Foto de dois SRD para adoção', width: 500, height: 750 },
-      { src: 'img/projetos/adocao3.jpg', alt: 'Foto de um filhote de gato para adoção', width: 500, height: 333 },
-      { src: 'img/projetos/adocao2.jpg', alt: 'Foto de um SRD para adoção', width: 500, height: 750 },
+      { src: new URL('../../img/projetos/adocao1.jpg', import.meta.url).href, alt: 'Foto de dois SRD para adoção', width: 500, height: 750 },
+      { src: new URL('../../img/projetos/adocao3.jpg', import.meta.url).href, alt: 'Foto de um filhote de gato para adoção', width: 500, height: 333 },
+      { src: new URL('../../img/projetos/adocao2.jpg', import.meta.url).href, alt: 'Foto de um SRD para adoção', width: 500, height: 750 },
     ],
     cta: {
       text: 'Deseja saber mais sobre este projeto?',
