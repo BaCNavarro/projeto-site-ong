@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ONG Resgate Animal: resgate, reabilitação e adoção responsável de cães e gatos em Belo Horizonte.">
+    <meta name="theme-color" content="#2c807a">
+    <title>Início | ONG Resgate Animal</title>
+    <link rel="icon" href="favicon/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@600;700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/main.js"></script>
+</head>
+<body>
+
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <a class="brand" href="#/">
+                <span class="brand__logo">
+                    <img src="logo/logotipo.jpeg" alt="Logotipo ONG Resgate Animal" width="469" height="256">
+                </span>
+                <h1 class="brand__name">ONG Resgate <span>Animal</span></h1>
+            </a>
+
+            <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Abrir menu de navegação">
+            <label class="nav-toggle__label" for="nav-toggle" aria-hidden="true">
+                <span class="nav-toggle__icon"></span>
+            </label>
+
+            <nav class="main-nav" aria-label="Navegação principal">
+                <ul class="main-nav__list">
+                    <li><a class="main-nav__link" href="#/" data-nav-link>Início</a></li>
+                    <li><a class="main-nav__link" href="#/projetos" data-nav-link>Nossos Projetos</a></li>
+                    <li><a class="main-nav__link main-nav__link--cta" href="#/cadastro" data-nav-link>Seja um Colaborador</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Área dinâmica: o roteador (js/core/router.js) renderiza cada página aqui -->
+    <main id="conteudo" class="app-outlet" tabindex="-1">
+        <div class="app-fallback" data-app-fallback>
+            <div class="container">
+                <p class="app-fallback__loading">Carregando…</p>
+                <div class="app-fallback__error" hidden>
+                    <h2>Não foi possível carregar o site</h2>
+                    <p>Este site usa módulos JavaScript, que os navegadores bloqueiam quando o arquivo é aberto diretamente (endereço começando com <code>file://</code>).</p>
+                    <p>Abra o projeto por um servidor local, por exemplo a extensão <strong>Live Server</strong> do VS Code, ou rode <code>python3 -m http.server</code> na pasta do projeto e acesse <code>http://localhost:8000</code>.</p>
+                </div>
+            </div>
+        </div>
+        <noscript>
+            <div class="container app-fallback">
+                <h2>Ative o JavaScript</h2>
+                <p>Para navegar pelo site da ONG Resgate Animal, ative o JavaScript no seu navegador.</p>
+            </div>
+        </noscript>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="site-footer__grid grid-12">
+                <div class="site-footer__brand col-md-6 col-lg-5">
+                    <h2 class="site-footer__title">Contatos e Localização</h2>
+                    <address>
+                        <strong>Endereço:</strong><br>
+                        Rua dos Girassóis, 120<br>
+                        Bairro Jardim Primavera<br>
+                        Belo Horizonte - MG<br>
+                        CEP: 31270-900
+                    </address>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <h3 class="site-footer__title">Contato</h3>
+                    <address>
+                        Telefone: <a href="tel:+5531987654321">(31) 98765-4321</a><br>
+                        E-mail: <a href="mailto:contato@ongresgateanimal.com.br">contato@ongresgateanimal.com.br</a>
+                    </address>
+                </div>
+                <nav class="col-lg-3" aria-label="Links do rodapé">
+                    <h3 class="site-footer__title">Navegação</h3>
+                    <ul class="site-footer__links">
+                        <li><a href="#/">Início</a></li>
+                        <li><a href="#/projetos">Nossos Projetos</a></li>
+                        <li><a href="#/cadastro">Seja um Colaborador</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="site-footer__bottom">
+                <p class="site-footer__copy">&copy; 2026 ONG Resgate Animal. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Região de notificações (toasts), anunciada por leitores de tela -->
+    <div class="toast-region" id="toasts" aria-live="polite"></div>
+
+    <script>
+        // Em file:// os navegadores bloqueiam módulos e a SPA nunca inicia:
+        // troca o "Carregando…" por instruções. Em http(s) o aviso não é
+        // exibido, por mais lenta que esteja a conexão.
+        if (window.location.protocol === 'file:') {
+            var fallback = document.querySelector('[data-app-fallback]');
+            fallback.querySelector('.app-fallback__loading').hidden = true;
+            fallback.querySelector('.app-fallback__error').hidden = false;
+        }
+    </script>
+</body>
+</html>
