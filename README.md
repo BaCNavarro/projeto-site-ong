@@ -2,6 +2,8 @@
 
 Site institucional da **ONG Resgate Animal**, dedicada ao resgate, reabilitação e adoção responsável de cães e gatos em Belo Horizonte.
 
+> **Aviso:** este é um projeto hipotético, desenvolvido apenas para fins educacionais. A ONG Resgate Animal não existe, e os nomes, contatos, projetos e demais informações do site são fictícios. Os dados preenchidos no formulário ficam somente no navegador de quem o preencheu e não são enviados a ninguém.
+
 ## Funcionalidades
 
 - **Início:** apresentação da ONG, missão e valores
