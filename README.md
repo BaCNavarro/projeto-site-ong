@@ -15,15 +15,34 @@ Site institucional da **ONG Resgate Animal**, dedicada ao resgate, reabilitaçã
 
 HTML5, CSS3 e JavaScript puro (módulos ES), sem dependências nem etapa de build. A navegação é uma SPA com roteamento por hash (`#/rota`), que funciona em qualquer hospedagem estática, inclusive no GitHub Pages.
 
+## Acesse online
+
+O site está publicado no GitHub Pages: <https://bacnavarro.github.io/projeto-site-ong/>
+
+Cada push na branch `main` publica a nova versão automaticamente.
+
 ## Como rodar localmente
 
-Os navegadores bloqueiam módulos JavaScript quando o arquivo é aberto diretamente (`file://`), então use um servidor local:
+1. Clone o repositório e entre na pasta:
 
-```bash
-python3 -m http.server
-```
+   ```bash
+   git clone https://github.com/BaCNavarro/projeto-site-ong.git
+   cd projeto-site-ong
+   ```
 
-Depois acesse <http://localhost:8000>. Outra opção é a extensão **Live Server** do VS Code.
+2. Inicie um servidor local na raiz do projeto. Os navegadores bloqueiam módulos JavaScript quando o `index.html` é aberto diretamente (`file://`), então abrir o arquivo com dois cliques não funciona:
+
+   ```bash
+   python3 -m http.server 8000
+   ```
+
+   No Windows, use `py -m http.server 8000`.
+
+3. Acesse <http://localhost:8000>.
+
+Outra opção é abrir a pasta no VS Code e usar a extensão **Live Server** ("Open with Live Server" no `index.html`).
+
+Não há dependências para instalar nem etapa de build.
 
 ## Estrutura
 
