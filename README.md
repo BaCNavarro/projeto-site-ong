@@ -62,3 +62,7 @@ js/ui/              navegação e notificações
 ```
 
 Para alterar textos, valores ou projetos, edite apenas `js/data/content.js`.
+
+## Histórico de versões
+
+As mudanças de cada versão estão registradas no [CHANGELOG](CHANGELOG.md).
