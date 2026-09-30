@@ -53,6 +53,7 @@
   --color-accent-500: #f2994a;  /* laranja quente para chamadas de ação */
   --color-accent-600: #d97b28;
   --color-danger-500: #d64545;
+  --color-danger-600: #b42318;  /* erro em texto (AA sobre fundo claro) */
   --color-success-500: #2f9e5b;
   --color-whatsapp:   #25d366;
 
@@ -67,8 +68,10 @@
   --primary:       var(--color-brand-600);
   --primary-hover: var(--color-brand-700);
   --primary-soft:  var(--color-brand-100);
+  --link:          var(--color-brand-700);
+  --danger-text:   var(--color-danger-600);
   --border:        var(--color-neutral-200);
-  --focus-ring:    var(--color-brand-400);
+  --focus-ring:    var(--color-brand-700);
   --header-bg:     rgb(255 255 255 / 0.85);
   --footer-bg:     var(--color-brand-900);
   --footer-text:   var(--color-brand-100);
@@ -234,7 +237,7 @@ p + p {
 }
 
 a {
-  color: var(--primary);
+  color: var(--link);
   text-decoration-thickness: 0.08em;
   text-underline-offset: 0.2em;
   transition: color var(--duration-fast) ease;
@@ -1232,11 +1235,11 @@ address {
 }
 
 .form__field.is-invalid .form__label {
-  color: var(--color-danger-500);
+  color: var(--danger-text);
 }
 
 .form__label abbr {
-  color: var(--color-danger-500);
+  color: var(--danger-text);
   text-decoration: none;
 }
 
@@ -1320,7 +1323,7 @@ address {
   gap: var(--space-2);
   font-size: var(--fs-100);
   font-weight: 700;
-  color: var(--color-danger-500);
+  color: var(--danger-text);
   animation: fade-up var(--duration-base) var(--ease-out);
 }
 
@@ -1364,7 +1367,7 @@ address {
 .form__summary-title {
   margin-block-end: var(--space-2);
   font-weight: 800;
-  color: var(--color-danger-500);
+  color: var(--danger-text);
 }
 
 .form__summary-list {
@@ -1384,7 +1387,7 @@ address {
   content: "•";
   flex-shrink: 0;
   font-weight: 800;
-  color: var(--color-danger-500);
+  color: var(--danger-text);
 }
 
 .form__summary-link {
@@ -1400,7 +1403,7 @@ address {
 }
 
 .form__summary-link:hover {
-  color: var(--color-danger-500);
+  color: var(--danger-text);
 }
 
 /* Aviso de rascunho recuperado do localStorage */
@@ -1449,7 +1452,7 @@ address {
 }
 
 .form__footnote abbr {
-  color: var(--color-danger-500);
+  color: var(--danger-text);
   text-decoration: none;
 }
 
@@ -2152,6 +2155,9 @@ address {
     --primary:       var(--color-brand-300);
     --primary-hover: var(--color-brand-200);
     --primary-soft:  rgb(86 186 179 / 0.14);
+    --link:          var(--color-brand-300);
+    --danger-text:   #ff8a8a;
+    --focus-ring:    var(--color-brand-400);
     --border:        #2c3533;
     --header-bg:     rgb(20 24 22 / 0.85);
     --footer-bg:     #0e1211;
