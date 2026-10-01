@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "images": "node scripts/otimizar-imagens.mjs"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   "homepage": "https://github.com/BaCNavarro/projeto-site-ong#readme",
   "devDependencies": {
     "html-minifier-terser": "^7.2.0",
+    "sharp": "^0.35.5",
     "vite": "^6.4.3"
   },
   "private": true

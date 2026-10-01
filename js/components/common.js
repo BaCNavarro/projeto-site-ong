@@ -1,5 +1,5 @@
 /** Componentes de apresentação compartilhados entre as páginas. */
-import { html } from '../core/template.js';
+import { html, attrs } from '../core/template.js';
 
 export const iconBadge = (icon, modifierClass = '') => html`
   <span class="icon-badge ${modifierClass}" aria-hidden="true">${icon}</span>
@@ -27,6 +27,7 @@ export const valueCard = ({ icon, title, text }) => html`
   </li>
 `;
 
-export const image = ({ src, alt, width, height }, { lazy = false } = {}) => html`
-  <img src="${src}" alt="${alt}" width="${width}" height="${height}"${lazy ? html` loading="lazy"` : ''}>
+/** srcset e sizes são opcionais: só entram no <img> quando informados. */
+export const image = ({ src, srcset, sizes, alt, width, height }, { lazy = false } = {}) => html`
+  <img ${attrs({ src, srcset, sizes, alt, width, height, loading: lazy && 'lazy', decoding: 'async' })}>
 `;

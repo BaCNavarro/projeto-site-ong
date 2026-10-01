@@ -38,15 +38,23 @@ export const VALUES = [
   },
 ];
 
+// Largura em que cada imagem é exibida, para o navegador escolher a versão do srcset
+const HERO_SIZES = '(min-width: 62em) 320px, 45vw';
+const GALLERY_SIZES = '(min-width: 75em) 640px, (min-width: 48em) 45vw, 75vw';
+
 export const HERO_IMAGES = [
   {
-    src: new URL('../../img/home/imagem1.jpg', import.meta.url).href,
+    src: new URL('../../img/home/imagem1-500.webp', import.meta.url).href,
+    srcset: `${new URL('../../img/home/imagem1-320.webp', import.meta.url).href} 320w, ${new URL('../../img/home/imagem1-500.webp', import.meta.url).href} 500w`,
+    sizes: HERO_SIZES,
     alt: 'Dois cães e um gato interagindo amigavelmente deitados em almofadas',
     width: 500,
     height: 333,
   },
   {
-    src: new URL('../../img/home/imagem2.jpg', import.meta.url).href,
+    src: new URL('../../img/home/imagem2-500.webp', import.meta.url).href,
+    srcset: `${new URL('../../img/home/imagem2-320.webp', import.meta.url).href} 320w, ${new URL('../../img/home/imagem2-500.webp', import.meta.url).href} 500w`,
+    sizes: HERO_SIZES,
     alt: 'Dois cães e um gato brincando na porta de casa',
     width: 500,
     height: 375,
@@ -70,9 +78,30 @@ export const PROJECTS = [
     description:
       'Eventos quinzenais realizados em praças parceiras na região de Belo Horizonte, onde cães e gatos reabilitados são apresentados a possíveis adotantes após uma rigorosa entrevista.',
     gallery: [
-      { src: new URL('../../img/projetos/adocao1.jpg', import.meta.url).href, alt: 'Foto de dois SRD para adoção', width: 500, height: 750 },
-      { src: new URL('../../img/projetos/adocao3.jpg', import.meta.url).href, alt: 'Foto de um filhote de gato para adoção', width: 500, height: 333 },
-      { src: new URL('../../img/projetos/adocao2.jpg', import.meta.url).href, alt: 'Foto de um SRD para adoção', width: 500, height: 750 },
+      {
+        src: new URL('../../img/projetos/adocao1-500.webp', import.meta.url).href,
+        srcset: `${new URL('../../img/projetos/adocao1-320.webp', import.meta.url).href} 320w, ${new URL('../../img/projetos/adocao1-500.webp', import.meta.url).href} 500w`,
+        sizes: GALLERY_SIZES,
+        alt: 'Foto de dois SRD para adoção',
+        width: 500,
+        height: 750,
+      },
+      {
+        src: new URL('../../img/projetos/adocao3-500.webp', import.meta.url).href,
+        srcset: `${new URL('../../img/projetos/adocao3-320.webp', import.meta.url).href} 320w, ${new URL('../../img/projetos/adocao3-500.webp', import.meta.url).href} 500w`,
+        sizes: GALLERY_SIZES,
+        alt: 'Foto de um filhote de gato para adoção',
+        width: 500,
+        height: 333,
+      },
+      {
+        src: new URL('../../img/projetos/adocao2-500.webp', import.meta.url).href,
+        srcset: `${new URL('../../img/projetos/adocao2-320.webp', import.meta.url).href} 320w, ${new URL('../../img/projetos/adocao2-500.webp', import.meta.url).href} 500w`,
+        sizes: GALLERY_SIZES,
+        alt: 'Foto de um SRD para adoção',
+        width: 500,
+        height: 750,
+      },
     ],
     cta: {
       text: 'Deseja saber mais sobre este projeto?',

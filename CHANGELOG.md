@@ -7,6 +7,14 @@ e o projeto adota o [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 
 ## [Não lançado]
 
+### Adicionado
+
+- Script `npm run images`, que gera as versões WebP das imagens a partir dos originais em `fontes/imagens/` com o sharp (#2).
+
+### Alterado
+
+- Fotos e logotipo agora em WebP, com versões de 320 e 500 px servidas por `srcset` e `sizes` e decodificação assíncrona. As fotos caíram de 1,4 MB para 166 KB (ou 86 KB em telas pequenas) (#2).
+
 ## [1.1.0] - 2026-09-30
 
 Melhorias pós-lançamento: acessibilidade de cores, build de produção e documentação.
