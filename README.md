@@ -78,9 +78,14 @@ js/components/      templates reutilizáveis
 js/views/           uma view por página
 js/features/        cadastro e validação de formulários
 js/ui/              navegação e notificações
+img/, logo/         imagens em WebP usadas pelo site (geradas)
+fontes/imagens/     originais em JPEG das imagens
+scripts/            script de otimização de imagens (npm run images)
 ```
 
 Para alterar textos, valores ou projetos, edite apenas `js/data/content.js`.
+
+Para trocar uma foto, coloque o JPEG original em `fontes/imagens/` e rode `npm run images`.
 
 ## Histórico de versões
 
