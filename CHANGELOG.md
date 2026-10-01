@@ -7,6 +7,10 @@ e o projeto adota o [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 
 ## [Não lançado]
 
+## [1.1.1] - 2026-09-30
+
+Otimização de imagens.
+
 ### Adicionado
 
 - Script `npm run images`, que gera as versões WebP das imagens a partir dos originais em `fontes/imagens/` com o sharp (#2).
@@ -59,6 +63,7 @@ Primeira versão estável do site da ONG Resgate Animal, publicada no GitHub Pag
 
 - As URLs antigas (`projetos.html` e `cadastro.html`) agora redirecionam para as rotas equivalentes da SPA.
 
-[Não lançado]: https://github.com/BaCNavarro/projeto-site-ong/compare/v1.1.0...HEAD
+[Não lançado]: https://github.com/BaCNavarro/projeto-site-ong/compare/v1.1.1...HEAD
+[1.1.1]: https://github.com/BaCNavarro/projeto-site-ong/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/BaCNavarro/projeto-site-ong/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/BaCNavarro/projeto-site-ong/releases/tag/v1.0.0
